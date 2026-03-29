@@ -1,0 +1,8 @@
+com\mycompany\proyectoweb\JakartaRestConfiguration.class
+Modelo\GestionarProductos.class
+Servlets\PrimerServlet.class
+Modelo\GestionarUsuarios.class
+Modelo\Usuario.class
+Modelo\Producto.class
+Modelo\Persona.class
+com\mycompany\proyectoweb\resources\JakartaEE10Resource.class
