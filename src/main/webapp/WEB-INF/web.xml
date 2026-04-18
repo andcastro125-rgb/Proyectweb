@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <session-config><session-timeout>30</session-timeout></session-config>
+  <welcome-file-list><welcome-file>index.jsp</welcome-file></welcome-file-list>
+
+
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <!-- ══ CLIENTES ══ -->
+  <servlet>
+    <servlet-name>AdminClientes</servlet-name>
+    <servlet-class>Servlets.AdminClientesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminClientes</servlet-name>
+    <url-pattern>/adminClientes</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AgregarCliente</servlet-name>
+    <servlet-class>Servlets.AgregarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AgregarCliente</servlet-name>
+    <url-pattern>/agregarCliente</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EliminarCliente</servlet-name>
+    <servlet-class>Servlets.EliminarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarCliente</servlet-name>
+    <url-pattern>/eliminarCliente</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditarCliente</servlet-name>
+    <servlet-class>Servlets.EditarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarCliente</servlet-name>
+    <url-pattern>/editarCliente</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListarClientes</servlet-name>
+    <servlet-class>Servlets.ListarClientesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListarClientes</servlet-name>
+    <url-pattern>/listarClientes</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ConsultarCliente</servlet-name>
+    <servlet-class>Servlets.ConsultarClienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConsultarCliente</servlet-name>
+    <url-pattern>/consultarCliente</url-pattern>
+  </servlet-mapping>
+
+  <!-- ══ PRODUCTOS ══ -->
+  <servlet>
+    <servlet-name>AdminProductos</servlet-name>
+    <servlet-class>Servlets.AdminProductosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminProductos</servlet-name>
+    <url-pattern>/adminProductos</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AgregarProducto</servlet-name>
+    <servlet-class>Servlets.AgregarProductoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AgregarProducto</servlet-name>
+    <url-pattern>/agregarProducto</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EliminarProducto</servlet-name>
+    <servlet-class>Servlets.EliminarProductoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarProducto</servlet-name>
+    <url-pattern>/eliminarProducto</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditarProducto</servlet-name>
+    <servlet-class>Servlets.EditarProductoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarProducto</servlet-name>
+    <url-pattern>/editarProducto</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListarProductos</servlet-name>
+    <servlet-class>Servlets.ListarProductosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListarProductos</servlet-name>
+    <url-pattern>/listarProductos</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ConsultarProducto</servlet-name>
+    <servlet-class>Servlets.ConsultarProductoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConsultarProducto</servlet-name>
+    <url-pattern>/consultarProducto</url-pattern>
+  </servlet-mapping>
+
+</web-app>
