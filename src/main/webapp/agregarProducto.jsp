@@ -13,7 +13,6 @@
   <ul class="navbar__links">
     <li><a href="acceder.jsp">ACCEDER</a></li><li><a href="inicio.jsp">INICIO DE SESIÓN</a></li>
     <li><a href="bienvenida.jsp">BIENVENIDA</a></li><li><a href="servicios.jsp">SERVICIOS</a></li>
-    <li><a href="categorias.jsp">CATEGORÍAS</a></li>
   </ul>
 </nav>
 <main class="page-content">

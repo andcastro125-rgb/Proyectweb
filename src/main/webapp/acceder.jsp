@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<!-- ══════════ NAVBAR ══════════ -->
+<!NAVBAR>
 <nav class="navbar scrolled" id="mainNavbar">
   <a href="index.jsp" class="navbar__logo">
     <span class="navbar__logo-name">OPTIC<span>A</span>FÉ</span>
@@ -17,40 +17,46 @@
   </a>
   <ul class="navbar__links">
     <li><a href="acceder.jsp"    class="active">ACCEDER</a></li>
-    <li><a href="inicio.jsp">INICIO DE SESIÓN</a></li>
     <li><a href="bienvenida.jsp">BIENVENIDA</a></li>
     <li><a href="servicios.jsp">SERVICIOS</a></li>
-    <li><a href="categorias.jsp">CATEGORÍAS</a></li>
   </ul>
 </nav>
 
-<!-- ══════════ CONTENIDO ══════════ -->
 <main class="page-content">
   <section class="login-page">
 
-    <%-- Imagen lateral izquierda
-         Coloca login-bg.jpg en web/images/ (900x1080px)
-         Tema: portafiltros de espresso / granos de café --%>
     <div class="login-page__image"></div>
 
     <div class="login-page__form-area">
       <h1 class="fade-up">INICIO DE SESIÓN</h1>
 
-      <div class="form-group fade-up fade-up-delay-1">
-        <input type="text" id="nombre" name="nombre"
-               placeholder="NOMBRE" autocomplete="off"/>
-      </div>
+      <% String errorLogin = (String) request.getAttribute("errorLogin");
+         if (errorLogin != null) { %>
+        <p class="fade-up" style="color:#e74c3c; font-weight:bold; margin-bottom:10px;">
+          &#9888; <%= errorLogin %>
+        </p>
+      <% } %>
 
-      <div class="form-group fade-up fade-up-delay-2">
-        <input type="password" id="cedula" name="cedula"
-               placeholder="CÉDULA" autocomplete="off"/>
-      </div>
+      <%-- Formulario que envía POST al LoginServlet --%>
+      <form method="post" action="login" style="width:100%;">
 
-      <a href="bienvenida.jsp"
-         class="btn btn-gold fade-up fade-up-delay-3"
-         onclick="guardarNombre()">
-        INICIAR
-      </a>
+        <div class="form-group fade-up fade-up-delay-1">
+          <input type="text"     id="nombre" name="nombre"
+                 placeholder="USUARIO" autocomplete="off" required/>
+        </div>
+
+        <div class="form-group fade-up fade-up-delay-2">
+          <input type="password" id="cedula" name="cedula"
+                 placeholder="CONTRASEÑA" autocomplete="off" required/>
+        </div>
+
+        <button type="submit"
+                class="btn btn-gold fade-up fade-up-delay-3"
+                style="border:none; cursor:pointer; width:100%; margin-top:8px;">
+          INICIAR
+        </button>
+
+      </form>
 
       <div class="slide-dots fade-up fade-up-delay-4">
         <span class="dot active"></span>
@@ -64,16 +70,12 @@
   </section>
 </main>
 
-<!-- ══════════ FOOTER ══════════ -->
+
 <footer class="site-footer">
-  <p>Proyecto JavaWeb &mdash; <span>JuanCruz</span></p>
+  <p>Proyecto JavaWeb &mdash; <span>JuanCruz - Andrés Castro</span></p>
 </footer>
 
 <script>
-  function guardarNombre(){
-    var n = document.getElementById('nombre').value;
-    if(n.trim()) sessionStorage.setItem('opticafe_usuario', n.trim());
-  }
   (function(){
     var nav = document.getElementById('mainNavbar');
     window.addEventListener('scroll', function(){

@@ -10,20 +10,19 @@
       <li><a href="inicio.jsp"     id="nav-inicio">INICIO DE SESIÓN</a></li>
       <li><a href="bienvenida.jsp" id="nav-bienvenida">BIENVENIDA</a></li>
       <li><a href="servicios.jsp"  id="nav-servicios">SERVICIOS</a></li>
-      <li><a href="categorias.jsp" id="nav-categorias">CATEGORÍAS</a></li>
     </ul>
   </nav>
 </header>
 
 <script>
-  /* Navbar scroll effect */
+  
   (function() {
     var nav = document.getElementById('mainNavbar');
     window.addEventListener('scroll', function() {
       nav.classList.toggle('scrolled', window.scrollY > 40);
     });
 
-    /* Active link highlight */
+ 
     var page = window.location.pathname.split('/').pop() || 'index.jsp';
     var map = {
       'acceder.jsp':    'nav-acceder',

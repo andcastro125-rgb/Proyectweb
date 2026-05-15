@@ -18,7 +18,7 @@
     <li><a href="inicio.jsp">INICIO DE SESIÓN</a></li>
     <li><a href="bienvenida.jsp">BIENVENIDA</a></li>
     <li><a href="servicios.jsp" class="active">SERVICIOS</a></li>
-    <li><a href="categorias.jsp">CATEGORÍAS</a></li>
+    <li><a href="misPedidos">PEDIDOS</a></li>
   </ul>
 </nav>
 
@@ -40,15 +40,15 @@
 
       <div class="service-cards fade-up fade-up-delay-3">
 
-        <div class="service-card" onclick="location.href='categorias.jsp'">
-          <div class="service-card__title">CATEGORÍAS</div>
+        <div class="service-card" onclick="location.href='misPedidos.jsp'">
+          <div class="service-card__title">PEDIDOS</div>
           <p class="service-card__text">
-            Te ofrecemos los mejores y m&#225;s finos productos de la cafeter&#237;a
-            preparados con amor para ti; llegar&#225;n s&#250;per r&#225;pido a tu mesa.
+            Consulta el historial de pedidos realizados por los clientes,
+            con el detalle de productos, precio unitario y total de cada orden.
           </p>
         </div>
 
-        <div class="service-card" onclick="location.href='adminClientes'">
+        <div class="service-card" onclick="location.href='adminClientes.jsp'">
           <div class="service-card__title">CLIENTES</div>
           <p class="service-card__text">
             Administra los clientes del sistema: agregar, editar,
@@ -56,7 +56,7 @@
           </p>
         </div>
 
-        <div class="service-card" onclick="location.href='adminProductos'">
+        <div class="service-card" onclick="location.href='adminProductos.jsp'">
           <div class="service-card__title">PRODUCTOS</div>
           <p class="service-card__text">
             Administra el cat&#225;logo de productos: agregar, editar,
@@ -81,7 +81,7 @@
 </main>
 
 <footer class="site-footer">
-  <p>Proyecto JavaWeb &mdash; <span>JuanCruz</span></p>
+  <p>Proyecto JavaWeb &mdash; <span>JuanCruz - Andrés Castro</span></p>
 </footer>
 
 <script>

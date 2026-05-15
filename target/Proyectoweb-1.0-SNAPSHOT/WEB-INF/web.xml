@@ -8,114 +8,82 @@
   <session-config><session-timeout>30</session-timeout></session-config>
   <welcome-file-list><welcome-file>index.jsp</welcome-file></welcome-file-list>
 
-  <!-- ══ CLIENTES ══ -->
+
   <servlet>
-    <servlet-name>AdminClientes</servlet-name>
-    <servlet-class>Servlets.AdminClientesServlet</servlet-class>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Servlets.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>AdminClientes</servlet-name>
-    <url-pattern>/adminClientes</url-pattern>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
   </servlet-mapping>
 
   <servlet>
-    <servlet-name>AgregarCliente</servlet-name>
-    <servlet-class>Servlets.AgregarClienteServlet</servlet-class>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Servlets.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>AgregarCliente</servlet-name>
-    <url-pattern>/agregarCliente</url-pattern>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
   </servlet-mapping>
 
+ 
   <servlet>
-    <servlet-name>EliminarCliente</servlet-name>
-    <servlet-class>Servlets.EliminarClienteServlet</servlet-class>
+    <servlet-name>GestionClientes</servlet-name>
+    <servlet-class>Servlets.GestionClientesServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>EliminarCliente</servlet-name>
-    <url-pattern>/eliminarCliente</url-pattern>
+    <servlet-name>GestionClientes</servlet-name>
+    <url-pattern>/gestionClientes</url-pattern>
   </servlet-mapping>
 
+  
   <servlet>
-    <servlet-name>EditarCliente</servlet-name>
-    <servlet-class>Servlets.EditarClienteServlet</servlet-class>
+    <servlet-name>GestionProductos</servlet-name>
+    <servlet-class>Servlets.GestionProductosServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>EditarCliente</servlet-name>
-    <url-pattern>/editarCliente</url-pattern>
+    <servlet-name>GestionProductos</servlet-name>
+    <url-pattern>/gestionProductos</url-pattern>
   </servlet-mapping>
 
+  
   <servlet>
-    <servlet-name>ListarClientes</servlet-name>
-    <servlet-class>Servlets.ListarClientesServlet</servlet-class>
+    <servlet-name>RegistroCliente</servlet-name>
+    <servlet-class>Servlets.RegistroClienteServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ListarClientes</servlet-name>
-    <url-pattern>/listarClientes</url-pattern>
+    <servlet-name>RegistroCliente</servlet-name>
+    <url-pattern>/registroCliente</url-pattern>
   </servlet-mapping>
 
+  
   <servlet>
-    <servlet-name>ConsultarCliente</servlet-name>
-    <servlet-class>Servlets.ConsultarClienteServlet</servlet-class>
+    <servlet-name>Pedido</servlet-name>
+    <servlet-class>Servlets.PedidoServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ConsultarCliente</servlet-name>
-    <url-pattern>/consultarCliente</url-pattern>
+    <servlet-name>Pedido</servlet-name>
+    <url-pattern>/pedido</url-pattern>
   </servlet-mapping>
 
-  <!-- ══ PRODUCTOS ══ -->
-  <servlet>
-    <servlet-name>AdminProductos</servlet-name>
-    <servlet-class>Servlets.AdminProductosServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AdminProductos</servlet-name>
-    <url-pattern>/adminProductos</url-pattern>
-  </servlet-mapping>
 
   <servlet>
-    <servlet-name>AgregarProducto</servlet-name>
-    <servlet-class>Servlets.AgregarProductoServlet</servlet-class>
+    <servlet-name>Factura</servlet-name>
+    <servlet-class>Servlets.FacturaServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>AgregarProducto</servlet-name>
-    <url-pattern>/agregarProducto</url-pattern>
+    <servlet-name>Factura</servlet-name>
+    <url-pattern>/factura</url-pattern>
   </servlet-mapping>
 
-  <servlet>
-    <servlet-name>EliminarProducto</servlet-name>
-    <servlet-class>Servlets.EliminarProductoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EliminarProducto</servlet-name>
-    <url-pattern>/eliminarProducto</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>EditarProducto</servlet-name>
-    <servlet-class>Servlets.EditarProductoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EditarProducto</servlet-name>
-    <url-pattern>/editarProducto</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>ListarProductos</servlet-name>
-    <servlet-class>Servlets.ListarProductosServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ListarProductos</servlet-name>
-    <url-pattern>/listarProductos</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>ConsultarProducto</servlet-name>
-    <servlet-class>Servlets.ConsultarProductoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ConsultarProducto</servlet-name>
-    <url-pattern>/consultarProducto</url-pattern>
-  </servlet-mapping>
+<servlet>
+    <servlet-name>PedidosServlet</servlet-name>
+    <servlet-class>Servlets.PedidosServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PedidosServlet</servlet-name>
+    <url-pattern>/misPedidos</url-pattern>
+</servlet-mapping>
 
 </web-app>

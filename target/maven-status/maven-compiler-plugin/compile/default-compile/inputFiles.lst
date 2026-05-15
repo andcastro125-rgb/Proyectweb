@@ -1,8 +1,18 @@
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\com\mycompany\proyectoweb\JakartaRestConfiguration.java
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\Modelo\GestionarUsuarios.java
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\Servlets\PrimerServlet.java
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\Modelo\Usuario.java
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\Modelo\GestionarProductos.java
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\Modelo\Persona.java
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\com\mycompany\proyectoweb\resources\JakartaEE10Resource.java
-C:\Users\Juan Cruz\OneDrive\Escritorio\Proyectoweb\src\main\java\Modelo\Producto.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/com/mycompany/proyectoweb/JakartaRestConfiguration.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/Producto.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/LoginServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/Usuario.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/GestionProductosServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/RegistroClienteServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/GestionarUsuarios.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/GestionarPedidosTXT.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/GestionarUsuariosTXT.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/PedidosServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/Persona.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/PedidoServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/LogoutServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/GestionClientesServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/GestionarProductos.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Modelo/GestionarProductosTXT.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/Servlets/FacturaServlet.java
+/Users/andrescastro/NetBeansProjects/Proyectoweb_Nuestro - copia/src/main/java/com/mycompany/proyectoweb/resources/JakartaEE10Resource.java

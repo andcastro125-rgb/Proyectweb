@@ -54,7 +54,7 @@
     </div>
   </section>
 </main>
-<footer class="site-footer"><p>Proyecto JavaWeb &mdash; <span>JuanCruz</span></p></footer>
+<footer class="site-footer"><p>Proyecto JavaWeb &mdash; <span>JuanCruz - Andrés Castro</span></p></footer>
 <a href="adminProductos" class="admin-back">Volver</a>
 <script>(function(){var n=document.getElementById('mainNavbar');window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>40);});})();</script>
 </body></html>

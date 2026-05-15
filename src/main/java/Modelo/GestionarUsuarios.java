@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Gestiona la lista de clientes/usuarios en sesión.
- * Los datos viven en HttpSession bajo la clave "clientes".
  */
 public class GestionarUsuarios {
 
@@ -20,7 +18,7 @@ public class GestionarUsuarios {
         return lista;
     }
 
-    /** Agrega un cliente nuevo. Devuelve false si la cédula ya existe. */
+    // Aqui agregamos a un cliente nuevo. Devuelve false si la cédula ya existe. 
     public static boolean agregar(HttpSession session, String nombre, String cedula) {
         List<Usuario> lista = getLista(session);
         for (Usuario u : lista) {
@@ -30,13 +28,13 @@ public class GestionarUsuarios {
         return true;
     }
 
-    /** Elimina por cédula. Devuelve false si no existe. */
+    // EliminamoS por cédula. Devuelve false si no existe.
     public static boolean eliminar(HttpSession session, String cedula) {
         List<Usuario> lista = getLista(session);
         return lista.removeIf(u -> u.getCedula().equals(cedula));
     }
 
-    /** Edita el nombre de un cliente identificado por cédula. */
+    // Editamos el nombre de un cliente identificado por cédula.
     public static boolean editar(HttpSession session, String cedula, String nuevoNombre) {
         for (Usuario u : getLista(session)) {
             if (u.getCedula().equals(cedula)) {
@@ -47,7 +45,7 @@ public class GestionarUsuarios {
         return false;
     }
 
-    /** Busca un cliente por cédula. Devuelve null si no existe. */
+    // Devuelve null si no existe. 
     public static Usuario consultar(HttpSession session, String cedula) {
         for (Usuario u : getLista(session)) {
             if (u.getCedula().equals(cedula)) return u;
@@ -55,7 +53,7 @@ public class GestionarUsuarios {
         return null;
     }
 
-    /** Devuelve todos los clientes. */
+    // Mostramos todos los clientes .
     public static List<Usuario> listar(HttpSession session) {
         return getLista(session);
     }

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<!-- ══════════ NAVBAR ══════════ -->
+
 <nav class="navbar" id="mainNavbar">
   <a href="index.jsp" class="navbar__logo">
     <span class="navbar__logo-name">OPTIC<span>A</span>FÉ</span>
@@ -20,16 +20,13 @@
     <li><a href="inicio.jsp">INICIO DE SESIÓN</a></li>
     <li><a href="bienvenida.jsp" class="active">BIENVENIDA</a></li>
     <li><a href="servicios.jsp">SERVICIOS</a></li>
-    <li><a href="categorias.jsp">CATEGORÍAS</a></li>
   </ul>
 </nav>
 
-<!-- ══════════ CONTENIDO ══════════ -->
+
 <main class="page-content">
   <section class="welcome-page">
 
-    <%-- Fondo: coloca welcome-bg.jpg en web/images/ (1920x1080px)
-         Tema: múltiples tazas de café vista superior sobre madera oscura --%>
     <div class="welcome-page__bg"></div>
 
     <div class="welcome-page__content">
@@ -50,9 +47,8 @@
   </section>
 </main>
 
-<!-- ══════════ FOOTER ══════════ -->
 <footer class="site-footer">
-  <p>Proyecto JavaWeb &mdash; <span>JuanCruz</span></p>
+  <p>Proyecto JavaWeb &mdash; <span>JuanCruz - Andrés Castro</span></p>
 </footer>
 
 <script>
